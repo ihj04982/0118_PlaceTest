@@ -1,0 +1,66 @@
+{
+  "name": "0118_PlaceTest",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+        "$path": "src/shared"
+    },
+
+    "ServerScriptService": {
+      "$className":"ServerScriptService",
+        "$path": "src/server"
+    },
+    
+    "StarterPack":{
+      "$className":"StarterPack",
+        "$path":"src/backpack"    
+    },
+
+    "ServerStorage":{
+      "$path": "src/storage"
+    },
+
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "$path": "src/client"
+      }, 
+
+      "StarterCharacterScripts": {
+        "Client": {
+          "$path": "src/character"
+        }
+      }
+    },
+    "StarterGui":{
+      "$path": "src/starterGui"
+    },
+
+    "Workspace": {
+      "$properties": {
+        "FilteringEnabled": true
+      }
+
+    },
+
+    "Lighting": {
+      "$properties": {
+        "Ambient": [
+          0,
+          0,
+          0
+        ],
+        "Brightness": 2,
+        "GlobalShadows": true,
+        "Outlines": false,
+        "Technology": "Voxel"
+      }
+    },
+    
+    "SoundService": {
+      "$properties": {
+        "RespectFilteringEnabled": true
+      }
+    }
+  }
+}
