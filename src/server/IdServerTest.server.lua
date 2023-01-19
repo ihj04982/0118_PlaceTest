@@ -18,7 +18,7 @@ game.Players.PlayerAdded:Connect(function(player)
     if userId == TARGET_ID then
         TeleportService:TeleportAsync(PLACE2_ID, {player}, teleportOptions)
         local success, result = pcall(function()
-            return TeleportService:TeleportAsync(PLACE2_ID, {player}, teleportOptions) -
+            return TeleportService:TeleportAsync(PLACE2_ID, {player}, teleportOptions) 
         end)
         -- print("Player1 PlaceId : "..currentPlace.." JobId : "..currentServer)
 	else
