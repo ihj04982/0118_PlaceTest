@@ -16,15 +16,16 @@ teleportOptions.ReservedServerAccessCode = "yjLwMb5oj5F8IAO6AHAaHRQcfd_c5OlMp_7z
 game.Players.PlayerAdded:Connect(function(player)
     local userId = player.UserId
     if userId == TARGET_ID then
+        print("Place_1_Id : "..currentPlace.." JobId : "..currentServer)
+        wait(10)
         TeleportService:TeleportAsync(PLACE2_ID, {player}, teleportOptions)
         local success, result = pcall(function()
             return TeleportService:TeleportAsync(PLACE2_ID, {player}, teleportOptions) 
         end)
-        -- print("Player1 PlaceId : "..currentPlace.." JobId : "..currentServer)
 	else
-        
+        print("Place_1_Id : "..currentPlace.." JobId : "..currentServer)
+        wait(10)
         TeleportService:TeleportAsync(PLACE2_ID, {player})
 	    -- print("not a target")
-        -- print("Player2 PlaceId : "..currentPlace.." JobId : "..currentServer)
 	end
 end)
